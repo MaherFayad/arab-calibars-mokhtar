@@ -1,107 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Saap - Sass Landing HTML Template
-    Template URI: site.com
-    Description: Saap - Sass Landing HTML Template
-    Author: WebTend 
-    Author URI: https://webtend.net/
-    Version: 1.0
-
-
---------------------------
-    CSS INDEX
---------------------------
-    01.Theme Common CSS
-        # Google Fonts
-        # Base CSs
-        # Othres common
-        # All BG
-        # All color
-        # All Button
-        # Animated
-        # Preloader
-        # Search Modal
-        # Back to top
-    02. Header CSs
-        # Transparent Header
-        # Header Navigation
-        # Navigation Purple
-        # Navigation White
-        # Sticky Header
-    03. Hero CSS
-        # Hero One 
-        # Hero Two
-        # Hero Three
-        # Breadcrumbs
-    04. About CSS
-    05. Features CSS
-    06. Block CSS
-        # Block Icon Animate
-        # Block one
-        # Block Two
-        # Block Three
-        # Block Four
-        # Block Five
-        # Block Six
-        # Block Seven
-        # Block Eight
-        # Block Icon Left
-        # Block Check Item
-    07. Service CSS 
-    08. Elements CSS
-        # Fancy Text Block Common
-            # Fancy Text Block one
-            # Fancy Text Block two
-            # Fancy Text Block three
-            # Fancy Text Block four
-            # Fancy Text Block five
-            # Fancy Text Block six
-            # Fancy Text Block seven
-            # Fancy Text Block eight
-        # Counter CSS
-        # CTA Area
-            # CTA One
-            # CTA Two
-            # CTA Three
-        # Pagination
-    09. Pricing CSS
-        # Check List
-        # Switch Toggle
-        # Pricing One
-        # Pricing Two
-    10. Portfolio CSS
-        # Portfolio One
-        # Portfolio Details
-    11. Testimonial CSS
-        # Testimonial One
-        # Testimonial Two
-        # Testimonial Threee
-    12. Team CSS
-        # Team One
-        # Team Details
-    13. Faq CSS
-    14. Blog CSS
-        # Post Meta
-        # Blog Two Column
-        # Blog Three Column
-        # Blog Standard
-        # Blog Details
-        # Sidebar Widget
-    15. Contact CSS
-        # Contact form
-        # Contact Information
-        # Contact One
-        # Contact Two
-        # Contact Map Page
-    16. Footer CSS
-        # Footer Area
-        # Footer Default
-        # Footer White
------------------------------------------------------------------------------------*/
-/*=========================
-    1. Start COMMON css 
-==========================*/
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 /* Base CSS */
@@ -257,14 +154,14 @@ textarea.form_control {
 }
 
 .sub-title {
-  color: #9E59FF;
+  color: #9CCC54;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
 }
 .sub-title.sub-title-bg {
   padding: 10px 24px;
-  background-color: rgba(158, 89, 255, 0.1);
+  background-color: #F4F9EB;
   border-radius: 17px;
   margin-bottom: 15px;
 }
@@ -293,7 +190,7 @@ textarea.form_control {
 
 /* All bg */
 .blue-dark {
-  background-color: #0061FE;
+  background-color: #5355A4;
 }
 
 .purple-dark {
@@ -368,7 +265,7 @@ button {
   color: #0A1426;
 }
 .main-btn.btn-blue-dark {
-  background: #0061FE;
+  background: #5355A4;
   color: #fff;
 }
 .main-btn.btn-purple-dark {
@@ -379,11 +276,11 @@ button {
   border: 1px solid #CED0D4;
 }
 .main-btn.bordered-btn.bordered-blue {
-  border-color: #0061FE;
-  color: #0061FE;
+  border-color: #5355A4;
+  color: #5355A4;
 }
 .main-btn.bordered-btn.bordered-blue:hover {
-  background-color: #0061FE;
+  background-color: #5355A4;
   color: #fff;
 }
 .main-btn.bordered-btn.bordered-purple {
@@ -609,7 +506,7 @@ button {
 .preloader .pre-box {
   width: 50px;
   height: 50px;
-  background: #0061FE;
+  background: #5355A4;
   -webkit-animation: loaderAnimate 0.5s linear infinite;
   animation: loaderAnimate 0.5s linear infinite;
   position: absolute;
@@ -738,7 +635,7 @@ button {
     Start Back to top css
 */
 .back-to-top {
-  background: #0061FE;
+  background: #5355A4;
   border-radius: 50%;
   bottom: 30px;
   color: #fff;
@@ -860,7 +757,7 @@ button {
   line-height: 1;
 }
 .header-navigation .main-menu ul > li > a.active {
-  color: #0061FE;
+  color: #5355A4;
 }
 .header-navigation .main-menu ul > li .sub-menu {
   position: absolute;
@@ -896,7 +793,7 @@ button {
   color: #1b3255;
 }
 .header-navigation .main-menu ul > li .sub-menu li a:hover {
-  background-color: #0061FE;
+  background-color: #5355A4;
   color: #fff;
   border-color: transparent;
 }
@@ -908,11 +805,11 @@ button {
   top: 0%;
 }
 .header-navigation .main-menu ul > li .sub-menu li:hover > a {
-  background-color: #0061FE;
+  background-color: #5355A4;
   color: #fff;
 }
 .header-navigation .main-menu ul > li:hover > a {
-  color: #0061FE;
+  color: #5355A4;
 }
 .header-navigation .main-menu ul > li:hover > .sub-menu {
   opacity: 1;
@@ -1063,7 +960,7 @@ button {
   line-height: 40px;
   display: none;
   cursor: pointer;
-  background: #0061FE;
+  background: #5355A4;
 }
 .header-navigation .navbar-close i {
   color: #fff;
@@ -1149,10 +1046,10 @@ button {
   color: #fff;
 }
 .navigation-white.sticky .main-menu ul > li:hover.has-children > a:after {
-  color: #0061FE;
+  color: #5355A4;
 }
 .navigation-white.sticky .main-menu ul > li:hover > a {
-  color: #0061FE;
+  color: #5355A4;
 }
 
 @-webkit-keyframes sticky {
@@ -1214,11 +1111,14 @@ button {
   height: 600px;
 }
 .hero-style-one .hero-content {
-  margin-bottom: 120px;
+  margin-bottom: 24px;
 }
 .hero-style-one .hero-content h1 {
   color: #fff;
   text-transform: capitalize;
+  margin-bottom: 35px;
+}
+.hero-style-one .hero-content a {
   margin-bottom: 35px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1271,7 +1171,7 @@ button {
 }
 .hero-style-two .shape.shape-two span {
   background-color: #fff;
-  border: 5px solid #9E59FF;
+  border: 5px solid #9CCC54;
   -webkit-filter: drop-shadow(0px 10px 50px rgba(48, 117, 255, 0.5));
           filter: drop-shadow(0px 10px 50px rgba(48, 117, 255, 0.5));
 }
@@ -1647,7 +1547,7 @@ h3.title {
 }
 
 .purple-light {
-  color: #9E59FF;
+  color: #9CCC54;
 }
 
 .purple-dark {
@@ -1732,7 +1632,7 @@ h3.title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #0061FE;
+  background-color: #5355A4;
   color: #fff;
   margin-bottom: 32px;
 }
@@ -1749,7 +1649,7 @@ h3.title {
           box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
 }
 .block-style-one:hover .icon {
-  background-color: #9E59FF;
+  background-color: #9CCC54;
 }
 
 /* Block Style Two */
@@ -1813,20 +1713,23 @@ h3.title {
   font-size: 35px;
 }
 .block-style-two .icon.bg-one {
-  background-color: rgba(0, 97, 254, 0.2);
-  color: #0061FE;
+  background-color: #EEEEF6;
+  color: #5355A4;
 }
 .block-style-two .icon.bg-two {
-  background-color: rgba(255, 71, 87, 0.2);
-  color: #FF4757;
+  background-color: #EEEEF6;
+  color: #5355A4;
+
 }
 .block-style-two .icon.bg-three {
-  background-color: rgba(7, 213, 172, 0.2);
-  color: #07D5AC;
+  background-color: #EEEEF6;
+  color: #5355A4;
+
 }
 .block-style-two .icon.bg-four {
-  background-color: rgba(89, 86, 233, 0.2);
-  color: #3938B9;
+  background-color: #EEEEF6;
+  color: #5355A4;
+
 }
 .block-style-two .text {
   margin-top: -7px;
@@ -1872,7 +1775,7 @@ h3.title {
   padding: 50px 35px;
   border-radius: 5px;
   -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+color  transition: all 0.3s ease-out 0s;
 }
 .block-style-four:hover {
   margin-top: -10px;
@@ -2016,7 +1919,7 @@ h3.title {
 }
 .block-style-seven .icon.bg-one {
   background-color: rgba(158, 89, 255, 0.2);
-  color: #9E59FF;
+  color: #9CCC54;
 }
 .block-style-seven .icon.bg-two {
   background-color: rgba(89, 86, 233, 0.2);
@@ -2052,7 +1955,7 @@ h3.title {
   background-color: #07D5AC;
 }
 .block-style-eight .icon.bg-two {
-  background-color: #9E59FF;
+  background-color: #9CCC54;
 }
 .block-style-eight .text {
   margin-top: -7px;
@@ -2659,7 +2562,7 @@ h3.title {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 50px;
-  color: #0061FE;
+  color: #5355A4;
   margin-bottom: 20px;
 }
 .counter-style-one .counter-item .text h2 {
@@ -2982,8 +2885,8 @@ h3.title {
   height: 80px;
   border-radius: 50%;
   font-size: 30px;
-  background-color: rgba(158, 89, 255, 0.1);
-  color: #5956E9;
+  background-color: #F4F9EB;
+  color: #9CCC54;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3019,7 +2922,10 @@ h3.title {
   display: block;
   text-align: center;
 }
-
+.hero-description{
+  color: #fff;
+  margin-bottom: 24px;
+}
 /* Pricing Two CSS  */
 .pricing-item-two {
   padding: 40px 50px 50px;
@@ -3276,8 +3182,8 @@ h3.title {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #0061FE;
-  color: #0061FE;
+  border: 1px solid #5355A4;
+  color: #5355A4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3294,7 +3200,7 @@ h3.title {
   margin-left: 10px;
 }
 .testimonial-style-one .text-wrapper .testimonial-arrows .slick-arrow:hover {
-  background-color: #0061FE;
+  background-color: #5355A4;
   color: #fff;
   border-color: transparent;
 }
@@ -3516,7 +3422,7 @@ h3.title {
   transition: all 0.3s ease-out 0s;
 }
 .team-style-one .team-item .img-holder .team-hover .hover-content ul.social-link li a:hover {
-  background-color: #0061FE;
+  background-color: #5355A4;
   color: #fff;
 }
 .team-style-one .team-item .img-holder .team-hover .hover-content h5 {
@@ -3713,8 +3619,8 @@ h3.title {
 }
 .post-meta ul li span.date {
   padding: 3px 20px;
-  background-color: rgba(158, 89, 255, 0.1);
-  color: #9E59FF;
+  background-color: #F4F9EB;
+  color: #9CCC54;
   font-size: 14px;
   line-height: 24px;
   border-radius: 15px;
@@ -3752,7 +3658,7 @@ h3.title {
   margin-bottom: 10px;
 }
 .blog-three-column .blog-post-item .entry-content h3.title:hover {
-  color: #9E59FF;
+  color: #9CCC54;
 }
 
 /* Blog Two Column */
@@ -3781,10 +3687,10 @@ h3.title {
   margin-bottom: 10px;
 }
 .blog-two-column .blog-post-item .entry-content h3.title:hover {
-  color: #9E59FF;
+  color: #9CCC54;
 }
 .blog-two-column .blog-post-item .entry-content .btn_link:hover {
-  color: #9E59FF;
+  color: #9CCC54;
   text-decoration: underline;
 }
 
@@ -3884,8 +3790,8 @@ h3.title {
 }
 .blog-details-wrapper .blog-post-item .post-content .post-meta ul li span.date {
   padding: 3px 20px;
-  background-color: rgba(158, 89, 255, 0.1);
-  color: #9E59FF;
+  background-color: #F4F9EB;
+  color: #9CCC54;
   font-size: 14px;
   line-height: 24px;
   border-radius: 15px;
@@ -4446,7 +4352,7 @@ h3.title {
   width: 60px;
   height: 60px;
   border-radius: 0px 4px 4px 0px;
-  background: #0061FE;
+  background: #5355A4;
   color: #fff;
 }
 .footer-area .footer-widget .widget.newsletter-widget .newsletter-content form .form_control {
@@ -4485,17 +4391,17 @@ h3.title {
   color: #0A1426;
 }
 .footer-default .footer-widget .widget.about-widget ul.social-link li a:hover {
-  background-color: #0061FE;
+  background-color: #5355A4;
   color: #fff;
 }
 .footer-default .footer-widget .widget.footer-nav-widget ul.footer-nav li a:hover {
-  color: #0061FE;
+  color: #5355A4;
 }
 .footer-default .footer-widget .widget.contact-info-widget ul.info-list li span:hover a {
-  color: #0061FE;
+  color: #5355A4;
 }
 .footer-default .footer-widget .widget.contact-info-widget ul.info-list li span i {
-  color: #0061FE;
+  color: #5355A4;
 }
 
 /* Footer White */
