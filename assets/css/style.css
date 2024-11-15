@@ -3242,18 +3242,33 @@ color  transition: all 0.3s ease-out 0s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
 .testimonial-style-one .testimonial-item .author-thumb-title .author-thumb {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 70px;
-          flex: 0 0 70px;
-  width: auto;
+  width: 70px;
   height: 70px;
-  margin-right: 70px;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
 .testimonial-style-one .testimonial-item .author-thumb-title .author-thumb img {
   width: 100%;
   border-radius: 50%;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
 .testimonial-style-one .testimonial-item .author-thumb-title .author-title h5 {
   margin-bottom: 10px;

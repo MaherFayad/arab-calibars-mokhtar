@@ -159,7 +159,7 @@
         infinite: true,
 		autoplaySpeed: 1500,
         autoplay: true,
-		slidesToShow: 5,
+		slidesToShow: 4,
         slidesToScroll: 2,
         appendArrows: sliderArrows,
         prevArrow: '<div class="prev"><i class="far fa-arrow-left"></i></div>',
