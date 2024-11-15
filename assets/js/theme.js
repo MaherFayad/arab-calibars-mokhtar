@@ -159,8 +159,8 @@
         infinite: true,
 		autoplaySpeed: 1500,
         autoplay: true,
-		slidesToShow: 2,
-        slidesToScroll: 1,
+		slidesToShow: 5,
+        slidesToScroll: 2,
         appendArrows: sliderArrows,
         prevArrow: '<div class="prev"><i class="far fa-arrow-left"></i></div>',
 		nextArrow: '<div class="next"><i class="far fa-arrow-right"></i></div>',
@@ -169,7 +169,7 @@
                 breakpoint: 767,
                 settings: {
                     arrows: false,
-                    slidesToShow: 1
+                    slidesToShow: 3
                 }
             }
         ]

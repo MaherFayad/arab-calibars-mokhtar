@@ -12,7 +12,10 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+.brand-logo{
+  width: 320px;
+  height: auto;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -3208,7 +3211,7 @@ color  transition: all 0.3s ease-out 0s;
   position: relative;
   background-color: #FFFFFF;
   border-radius: 5px;
-  padding: 50px 50px 60px;
+  padding: 24px 24px 24px;
   z-index: 1;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3228,7 +3231,7 @@ color  transition: all 0.3s ease-out 0s;
   content: "";
   width: 70px;
   height: 70px;
-  background: url(../images/quote.png) no-repeat center;
+  /* background: url(../images/quote.png) no-repeat center; */
   background-size: contain;
   z-index: -1;
 }
@@ -3244,9 +3247,9 @@ color  transition: all 0.3s ease-out 0s;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 70px;
           flex: 0 0 70px;
-  width: 70px;
+  width: auto;
   height: 70px;
-  margin-right: 25px;
+  margin-right: 70px;
 }
 .testimonial-style-one .testimonial-item .author-thumb-title .author-thumb img {
   width: 100%;
