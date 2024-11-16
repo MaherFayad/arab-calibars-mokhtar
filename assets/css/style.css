@@ -716,7 +716,7 @@ button {
 .header-navigation .sidebar-logo {
   display: none;
   padding: 30px 20px;
-  text-align: center;
+  text-align: left;
 }
 .header-navigation .main-menu ul > li {
   display: inline-block;
