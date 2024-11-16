@@ -13,7 +13,7 @@ html {
   box-sizing: border-box;
 }
 .brand-logo{
-  width: 320px;
+  width: 240px;
   height: auto;
 }
 a {
@@ -118,6 +118,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 @media (min-width: 1200px) {
@@ -676,7 +677,7 @@ button {
   background-color: transparent;
   top: 35px;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
 }
 
@@ -684,7 +685,9 @@ button {
 .nav-ml-auto {
   margin-left: auto;
 }
-
+.header-navigation{
+  margin-right: 16px;
+}
 /* Header Navigation */
 .header-navigation .primary-menu {
   display: -webkit-box;
