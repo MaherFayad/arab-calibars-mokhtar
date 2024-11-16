@@ -209,7 +209,7 @@ textarea.form_control {
 }
 
 .blue-dark-gradient {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #1A0079 8.61%, #2F75FF 104.58%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #5456A2 70.61%, #9BCB54 140.58%);
 }
 
 .g-bg-one {
@@ -217,8 +217,8 @@ textarea.form_control {
 }
 
 .faq-accordian .card .card-header a i.bg-two, .portfolio-slider-one ul.slick-dots li, .block-check-item .icon, .g-bg-two {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-37.5%, #DC3545), to(#FD7E14));
-  background: linear-gradient(90deg, #DC3545 -37.5%, #FD7E14 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(10.5%, #5456A2), to(#9BCB54));
+  background: linear-gradient(90deg, #5456A2 10.5%, #9BCB54 100%);
 }
 
 /* All Color */
@@ -309,8 +309,8 @@ button {
 
 .btn-gradient-yellow {
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-37.5%, #DC3545), to(#FD7E14));
-  background: linear-gradient(90deg, #DC3545 -37.5%, #FD7E14 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(-37.5%, #5456A2), to(#9BCB54));
+  background: linear-gradient(90deg, #5456A2 -37.5%, #9BCB54 100%);
   color: #fff;
 }
 .btn-gradient-yellow:hover {
@@ -1379,7 +1379,7 @@ button {
 .breadcrumbs-wrapper .shape.shape-one span {
   width: 80px;
   height: 80px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #1A0079 8.61%, #2F75FF 104.58%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #5456A2 8.61%, #9BCB54 104.58%);
 }
 .breadcrumbs-wrapper .shape.shape-two {
   top: 165px;
@@ -1388,7 +1388,7 @@ button {
 .breadcrumbs-wrapper .shape.shape-two span {
   width: 40px;
   height: 40px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #1A0079 8.61%, #2F75FF 104.58%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #5456A2 8.61%, #9BCB54 104.58%);
 }
 .breadcrumbs-wrapper .shape.shape-three {
   bottom: 100px;
@@ -1397,8 +1397,8 @@ button {
 .breadcrumbs-wrapper .shape.shape-three span {
   width: 25px;
   height: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#407BFF), to(rgba(64, 123, 255, 0)));
-  background: linear-gradient(180deg, #407BFF 0%, rgba(64, 123, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#5456A2), to(rgba(64, 123, 255, 0)));
+  background: linear-gradient(180deg, #5456A2 0%, rgba(64, 123, 255, 0) 100%);
 }
 .breadcrumbs-wrapper .shape.shape-four {
   bottom: -190px;
@@ -1440,7 +1440,7 @@ button {
   display: none;
 }
 .breadcrumbs-wrapper .page-title-text ul.breadcrumbs-link li.active {
-  color: #FD7E14;
+  color: #9BCB54;
 }
 
 /*=========================
@@ -1921,11 +1921,11 @@ color  transition: all 0.3s ease-out 0s;
   margin-right: 20px;
 }
 .block-style-seven .icon.bg-one {
-  background-color: rgba(158, 89, 255, 0.2);
+  background-color: #E8F3D8;
   color: #9CCC54;
 }
 .block-style-seven .icon.bg-two {
-  background-color: rgba(89, 86, 233, 0.2);
+  background-color: #E8F3D8;
   color: #5956E9;
 }
 .block-style-seven .text p {
