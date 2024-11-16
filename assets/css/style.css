@@ -4227,6 +4227,18 @@ color  transition: all 0.3s ease-out 0s;
   font-size: 25px;
   margin-right: 25px;
 }
+.block-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.block-link:hover .block-style-two {
+  transform: scale(1.02); /* Optional: Add hover effect */
+  transition: 0.3s ease-in-out;
+}
+
+
 .contact-information-area .text-weapper .information-item .icon i {
   color: #9CCC54;
 }
