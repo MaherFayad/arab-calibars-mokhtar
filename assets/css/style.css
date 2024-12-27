@@ -685,9 +685,6 @@ button {
 .nav-ml-auto {
   margin-left: auto;
 }
-.header-navigation{
-  margin-right: 16px;
-}
 /* Header Navigation */
 .header-navigation .primary-menu {
   display: -webkit-box;
@@ -699,6 +696,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 .header-navigation .nav-overlay {
   position: fixed;
@@ -724,17 +724,25 @@ button {
 .header-navigation .main-menu ul > li {
   display: inline-block;
   position: relative;
-  margin: 0 25px;
+  margin: 0 12px;
 }
+.header-navigation .main-menu ul > li.has-children > a {
+  position: relative;
+  padding-right: 20px;
+}
+
 .header-navigation .main-menu ul > li.has-children > a:after {
-  content: "";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 400;
-  display: inline-block;
+  content: '\f107';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
   font-size: 14px;
-  margin-left: 5px;
-  float: right;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-navigation .main-menu ul > li.has-children > a:after {
     display: none;
@@ -748,10 +756,19 @@ button {
 .header-navigation .main-menu ul > li.has-children .sub-menu li.has-children:hover > a:after {
   color: #fff;
 }
+.header-navigation .main-menu ul > li.has-children .sub-menu li.has-children > a {
+  position: relative;
+  padding-right: 20px;
+}
 .header-navigation .main-menu ul > li.has-children .sub-menu li.has-children > a:after {
-  margin-left: 0px;
-  margin-right: 5px;
-  color: #0A1426;
+  content: '\f105'; /* Right-pointing arrow for submenus */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
 }
 .header-navigation .main-menu ul > li > a {
   display: block;
@@ -778,6 +795,7 @@ button {
   z-index: 99;
   height: auto;
   text-align: left;
+  min-width: 220px; /* Increased width for longer industry names */
 }
 .header-navigation .main-menu ul > li .sub-menu li {
   display: block;
@@ -946,6 +964,7 @@ button {
   -webkit-transform: rotate3d(0, 0, 1, 45deg);
           transform: rotate3d(0, 0, 1, 45deg);
   top: 8px;
+  opacity: 0;
 }
 .header-navigation .navbar-toggler.active span:nth-of-type(2) {
   opacity: 0;
@@ -954,6 +973,7 @@ button {
   -webkit-transform: rotate3d(0, 0, 1, -45deg);
           transform: rotate3d(0, 0, 1, -45deg);
   top: -8px;
+  opacity: 0;
 }
 .header-navigation .navbar-close {
   position: absolute;
@@ -992,7 +1012,7 @@ button {
   color: #fff;
 }
 .navigation-white .main-menu ul > li:hover.has-children > a:after {
-  color: #0A1426;
+  color: #fff;
 }
 .navigation-white .main-menu ul > li:hover > a {
   color: #0A1426;
@@ -1035,7 +1055,7 @@ button {
 /* Header Sticky */
 .header-navigation.sticky {
   position: fixed;
-  padding: 10px 0;
+  padding: 15px 0;
   top: 0;
   left: 0;
   right: 0;
@@ -1043,6 +1063,8 @@ button {
   background-color: #fff;
   -webkit-animation: sticky 1.2s;
           animation: sticky 1.2s;
+  border: none;
+  box-shadow: none;
 }
 
 .navigation-white.sticky {
@@ -1365,7 +1387,7 @@ button {
 /* Hero Breadcrumbs */
 .breadcrumbs-wrapper {
   position: relative;
-  padding: 225px 0 140px;
+  padding: 200px 0 80px;
   z-index: 1;
   overflow: hidden;
 }
@@ -4234,13 +4256,22 @@ color  transition: all 0.3s ease-out 0s;
   text-decoration: none;
   color: inherit;
   display: block;
+  transition: all 0.3s ease;
 }
 
-.block-link:hover .block-style-two {
-  transform: scale(1.02); /* Optional: Add hover effect */
-  transition: 0.3s ease-in-out;
+.block-link:hover {
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-5px);
 }
 
+.block-link .block-style-one {
+  transition: all 0.3s ease;
+}
+
+.block-link:hover .block-style-one {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 
 .contact-information-area .text-weapper .information-item .icon i {
   color: #9CCC54;
@@ -4477,4 +4508,228 @@ color  transition: all 0.3s ease-out 0s;
 }
 .footer-white .footer-copyright .text p {
   color: #fff;
+}
+
+/* Add to your existing CSS */
+.coming-soon {
+    font-size: 10px;
+    background: #FD7E14;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+}
+
+.main-menu ul > li > a.disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.main-menu ul > li > a.disabled:hover {
+    color: inherit;
+}
+
+/* Update the disabled link styles */
+.main-menu ul > li > a.disabled {
+    cursor: default;
+    opacity: 0.7;
+    pointer-events: none; /* This will completely disable hover effects */
+}
+
+/* Override any existing hover styles */
+.main-menu ul > li > a.disabled:hover,
+.main-menu ul > li > a.disabled:focus,
+.main-menu ul > li > a.disabled:active {
+    color: #fff !important; /* Use the default color */
+    opacity: 0.7 !important;
+    cursor: default !important;
+}
+
+/* Ensure the coming soon tag stays visible */
+.coming-soon {
+    font-size: 10px;
+    background: #FD7E14;
+    color: #fff !important; /* Force white color */
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+    pointer-events: none; /* Prevent any interaction with the tag */
+}
+
+/* Update the disabled menu item styles */
+.main-menu ul > li.menu-item.disabled {
+    cursor: default;
+    opacity: 0.7;
+    pointer-events: none; /* This will completely disable hover effects */
+}
+
+/* Override any existing hover styles for disabled menu items */
+.main-menu ul > li.menu-item.disabled a,
+.main-menu ul > li.menu-item.disabled a:hover,
+.main-menu ul > li.menu-item.disabled a:focus,
+.main-menu ul > li.menu-item.disabled a:active {
+    color: #fff; /* Use the default color */
+    opacity: 0.7 !important;
+    cursor: default !important;
+}
+
+/* Ensure the coming soon tag stays visible */
+.coming-soon {
+    font-size: 10px;
+    background: #FD7E14;
+    color: #fff !important; /* Force white color */
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+    pointer-events: none; /* Prevent any interaction with the tag */
+}
+
+/* Hero Image Slider */
+.hero-img {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    overflow: hidden;
+}
+
+.hero-image-swiper {
+    width: 100%;
+    height: 60vw;
+    position: relative;
+}
+
+.hero-image-swiper .swiper-slide {
+    text-align: center;
+    width: 100%;
+}
+
+.hero-image-swiper .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* New Pagination Styles */
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 50px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background: #fff !important;
+    opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: #9CCC54 !important;
+}
+
+/* Container z-index */
+.hero-area {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Custom Pagination Styles */
+.custom-pagination {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.custom-bullet {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-bullet.active {
+    opacity: 1;
+    background: #9CCC54;
+}
+
+.x-twitter {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-weight: bold;
+    font-style: normal;
+}
+.x-twitter:before {
+    content: "𝕏";
+}
+
+/* Find the .main-menu ul li.has-children class and add/modify these styles */
+.main-menu ul li.has-children {
+    position: relative;
+    /* padding-right: 15px; Add padding for the arrow */
+}
+
+
+/* For white navigation */
+.navigation-white .main-menu ul li.has-children:after {
+    color: #fff;
+}
+
+/* When header becomes sticky */
+.sticky .main-menu ul li.has-children:after {
+    color: #1B1B1B;
+}
+
+/* Find the existing .disabled styles and add/update these styles */
+.main-menu ul li.disabled a {
+    color: #fff !important; /* Darker color */
+    opacity: 0.8;
+}
+
+.main-menu ul li.disabled a .coming-soon {
+    background: #666; /* Matching darker color for the "Coming Soon" label */
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+/* Ensure these styles apply in mobile view */
+@media (max-width: 991px) {
+    .main-menu ul li.disabled a {
+        color: #444 !important; /* Even darker on mobile */
+    }
+}
+
+.block-style-one .icon i {
+    font-size: 2.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Add media query for mobile devices */
+@media (max-width: 991px) {
+    .header-navigation {
+        padding-right: 16px;
+    }
 }

@@ -57,6 +57,39 @@
     // Document Ready
     $(document).ready(function() {
         mainMenu();
+       
+        // Initialize Hero Image Swiper
+        const heroImageSwiper = new Swiper('.hero-image-swiper', {
+            effect: 'fade',
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+            loop: true,
+            fadeEffect: {
+                crossFade: true
+            },
+            on: {
+                slideChange: function () {
+                    // Update custom pagination
+                    document.querySelectorAll('.custom-bullet').forEach((bullet, index) => {
+                        if (index === this.realIndex) {
+                            bullet.classList.add('active');
+                        } else {
+                            bullet.classList.remove('active');
+                        }
+                    });
+                },
+            }
+        });
+
+        // Add click handlers for custom pagination
+        document.querySelectorAll('.custom-bullet').forEach((bullet, index) => {
+            bullet.addEventListener('click', () => {
+                heroImageSwiper.slideToLoop(index);
+            });
+        });
     });
 
     // Nav Overlay On

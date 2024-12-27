@@ -5,7 +5,9 @@
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Contact Arab Calibars for professional IT services, software testing, consulting, and training. Get in touch with our experts in Cairo, Egypt.">
+    <meta name="keywords" content="IT services, software testing, consulting, training, Cairo, Egypt, Arab Calibars">
+    <meta name="author" content="Arab Calibars">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--====== Title ======-->
     <title>Arab Calibars | Contact.</title>
@@ -59,8 +61,8 @@
             <div class="modal-content">
                 <form>
                     <div class="form_group">
-                        <input type="text" class="form_control" placeholder="Search here...">
-                        <button class="search_btn"><i class="fa fa-search"></i></button>
+                        <input type="text" class="form_control" placeholder="Search here..." aria-label="Search">
+                        <button class="search_btn" title="Search" aria-label="Search"><i class="fa fa-search"></i></button>
                     </div>
                 </form>
             </div>
@@ -73,8 +75,7 @@
             <div class="container">
                 <div class="primary-menu">
                     <div class="site-branding">
-                        <a href="/" class="brand-logo"><img class="brand-logo" src="/assets/images/logo/logo-1.png"
-                                alt="Site Logo"></a>
+                        <a href="/" class="brand-logo"><img class="brand-logo" src="/assets/images/logo/logo-1.png" alt="Site Logo"></a>
                     </div>
                     <div class="nav-menu nav-ml-auto">
                         <!-- Navbar logo -->
@@ -86,50 +87,21 @@
                         <!-- Nav Menu -->
                         <nav class="main-menu">
                             <ul>
-                                <!-- <li class="menu-item has-children"><a href="#">Home</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="/">Home One</a></li>
-                                            <li><a href="index-2.html">Home Two</a></li>
-                                            <li><a href="index-3.html">Home Three</a></li>
-                                        </ul>
-                                    </li> -->
-                                <li class="menu-item"><a href="/services">Services</a>
-                                    <!-- <ul class="sub-menu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul> -->
+                                <li class="menu-item"><a href="/services">Services</a></li>
+                                <li class="menu-item has-children"><a href="#">Industries</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/industries/banking">Banking</a></li>
+                                        <li><a href="/industries/fintech">FinTech</a></li>
+                                        <li><a href="/industries/government">Government</a></li>
+                                    </ul>
                                 </li>
-                                <li class="menu-item"><a href="/about">About Us</a>
-                                </li>
-                                <!-- <li class="menu-item has-children"><a href="#">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li class="has-children"><a href="portfolio.html">Portfolio</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                </ul>
-                                            </li>
-                                            
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item has-children"><a href="#">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"><a href="contact.html">Contact</a></li> -->
+                                <li class="menu-item"><a href="/about">About Us</a></li>
+                                <li class="menu-item disabled"><a href="#">Careers <span class="coming-soon">Coming Soon</span></a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header-right-nav">
                         <ul class="d-inline-flex align-items-center">
-                            <!-- <li class="search-item"><a href="#" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></a></li> -->
                             <li class="nav-button"><a href="/contact" class="main-btn bordered-btn">Contact us</a></li>
                             <li class="nav-toggle-btn">
                                 <div class="navbar-toggler">
@@ -171,7 +143,7 @@
     <section class="contact-information-area pt-120 pb-70">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-7">
                     <div class="text-weapper mb-50" data-aos="fade-right" data-aos-delay="20">
                         <div class="section-title mb-20">
                             <h2>Always ready for Your
@@ -209,105 +181,94 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="img-holder text-right mb-50" data-aos="fade-left" data-aos-delay="30">
-                        <img src="/assets/images/contact-1.png" alt="contact image">
-                        <img src="/assets/images/arrow.png" class="shape-icon shape-icon-one animate-float-x" alt="">
-                    </div>
-                </div>
+                <div class="col-lg-5">
+                    <div>
+                        <div class="sidebar-widget-area mb-20">
+                            <div class="widget contact-widget mb-30" data-aos="fade-up" data-aos-delay="30">
+                                <h4 class="widget-title">Get In touch</h4>
+                                <div class="contact-form">
+    
+                                    <script type="text/javascript"
+                                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                                    <script type="text/javascript">
+                                        // Initialize Email.js
+                                        (function () {
+                                            emailjs.init('o4Pu1RMl2q1Ft2Wr0'); // Replace with your actual public key
+                                        })();
+    
+                                        // Function to handle form submission
+                                        function sendEmail(event) {
+                                            event.preventDefault(); // Prevent default form submission
+    
+                                            const form = document.getElementById('contact-form');
+                                            const data = {
+                                                name: form.name.value,       // Matches {{name}}
+                                                customeremail: form.customeremail.value, // Matches {{customeremail}} in template
+                                                subject: form.subject.value, // Matches {{subject}}
+                                                message: form.message.value  // Matches {{message}} in template
+                                            };
+    
+                                            emailjs
+                                                .send('service_iev6o4e', 'template_ywsihz9', data)
+                                                .then(
+                                                    function (response) {
+                                                        alert('Message sent successfully!');
+                                                        form.reset(); // Clear the form after successful submission
+                                                    },
+                                                    function (error) {
+                                                        alert('Failed to send message. Please try again later.');
+                                                    }
+                                                );
+                                        }
+    
+                                    </script>
+    
+                                    <form id="contact-form" onsubmit="sendEmail(event)">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form_group">
+                                                    <input type="text" class="form_control" placeholder="Full Name"
+                                                        name="name" required data-emailjs="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form_group">
+                                                    <input type="email" class="form_control" placeholder="Email"
+                                                        name="customeremail" required data-emailjs="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form_group">
+                                                    <input type="text" class="form_control" placeholder="Subject"
+                                                        name="subject" required data-emailjs="subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form_group">
+                                                    <textarea name="message" class="form_control" placeholder="Message"
+                                                        data-emailjs="message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form_group text-center">
+                                                    <button type="submit" class="main-btn btn-gradient-yellow">Submit
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </div>
             </div>
         </div>
     </section><!--====== End Contact information Section ======-->
-    <!--====== Start Contact Section ======-->
-    <section class="contact-area contact-style-one">
-        <div class="container">
-            <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="20">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="section-title text-center mb-35">
-                            <h2>Tech in Touch</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-
-                    <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-                    <script type="text/javascript">
-                        // Initialize Email.js
-                        (function () {
-                            emailjs.init('o4Pu1RMl2q1Ft2Wr0'); // Replace with your actual public key
-                        })();
-
-                        // Function to handle form submission
-                        function sendEmail(event) {
-                            event.preventDefault(); // Prevent default form submission
-
-                            const form = document.getElementById('contact-form');
-                            const data = {
-                                name: form.name.value,       // Matches {{name}}
-                                customeremail: form.customeremail.value, // Matches {{customeremail}} in template
-                                subject: form.subject.value, // Matches {{subject}}
-                                message: form.message.value  // Matches {{message}} in template
-                            };
-
-                            emailjs
-                                .send('service_iev6o4e', 'template_ywsihz9', data)
-                                .then(
-                                    function (response) {
-                                        alert('Message sent successfully!');
-                                        form.reset(); // Clear the form after successful submission
-                                    },
-                                    function (error) {
-                                        alert('Failed to send message. Please try again later.');
-                                    }
-                                );
-                        }
-
-                    </script>
-
-                    <form id="contact-form" onsubmit="sendEmail(event)">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form_group">
-                                    <input type="text" class="form_control" placeholder="Full Name" name="name" required
-                                        data-emailjs="name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form_group">
-                                    <input type="email" class="form_control" placeholder="Email" name="customeremail" required
-                                        data-emailjs="email">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form_group">
-                                    <input type="text" class="form_control" placeholder="Subject" name="subject"
-                                        required data-emailjs="subject">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form_group">
-                                    <textarea name="message" class="form_control" placeholder="Message"
-                                        data-emailjs="message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form_group text-center">
-                                    <button type="submit" class="main-btn btn-gradient-yellow">Submit Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </section><!--====== End Contact Section ======-->
     <!--====== Start Map section ======-->
     <section class="contact-page-map">
         <div class="map-box">
-            <p><br /><br /><br /><br /><br /><br /><br /></p>
+            <p><br /><br /></p>
         </div>
     </section>
     <!--====== End Map section ======-->
@@ -323,10 +284,9 @@
                             </div>
                             <p>Unleash Innovation. Elevate Success.</p>
                             <ul class="social-link">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href=" https://www.facebook.com/ARBCalibers/ " target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=" https://www.linkedin.com/company/arab-calibers/ " target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+                                <li><a href="https://x.com/arbcalibers" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -341,19 +301,18 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="widget footer-nav-widget" data-aos="fade-up" data-aos-delay="50">
                                 <div class="widget footer-nav-widget mb-40">
-                                    <h4 class="widget-title">Services</h4>
+                                    <h4 class="widget-title">Industries</h4>
                                     <ul class="footer-nav">
-                                        <li><a href="#">Documentation</a></li>
-                                        <li><a href="#">License</a></li>
-                                        <li><a href="#">Changelog</a></li>
-                                        <li><a href="#">Developers</a></li>
+                                        <li><a href="/industries/banking/">Banking Solutions</a></li>
+                                        <li><a href="/industries/fintech/">FinTech Solutions</a></li>
+                                        <li><a href="industries/government/">Government Solutions</a></li>
                                     </ul>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="widget contact-info-widget mb-40" data-aos="fade-up" data-aos-delay="60">
                             <h4 class="widget-title">Informaion</h4>
