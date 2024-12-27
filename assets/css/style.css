@@ -1015,7 +1015,7 @@ button {
   color: #fff;
 }
 .navigation-white .main-menu ul > li:hover > a {
-  color: #0A1426;
+  color: #a09fda;
 }
 .navigation-white .header-right-nav ul li.search-item a {
   color: #fff;
@@ -1033,14 +1033,14 @@ button {
 
 /* Navigation Purple */
 .navigation-purple .main-menu ul > li > a {
-  color: #0A1426;
+  color: #5956E9;
 }
 .navigation-purple .main-menu ul > li .sub-menu li:hover > a {
   background-color: #5956E9;
   color: #fff;
 }
 .navigation-purple .main-menu ul > li:hover.has-children > a:after {
-  color: #0A1426;
+  color: #5956E9;
 }
 .navigation-purple .main-menu ul > li:hover > a {
   color: #5956E9;
@@ -1077,7 +1077,7 @@ button {
   color: #5355A4;
 }
 .navigation-white.sticky .main-menu ul > li:hover > a {
-  color: #5355A4;
+  color: #8889b8;
 }
 
 @-webkit-keyframes sticky {
@@ -4751,4 +4751,25 @@ color  transition: all 0.3s ease-out 0s;
 /* Keep the arrow visible when sticky */
 .sticky .main-menu ul > li.has-children > a:after {
     color: #0A1426;
+}
+
+/* Rotate dropdown trigger arrow in mobile view */
+.header-navigation .nav-menu .main-menu ul li .dd-trigger {
+    transition: transform 0.3s ease;
+}
+
+.header-navigation .nav-menu .main-menu ul li.active .dd-trigger {
+    transform: rotate(180deg);
+}
+
+/* Update the icon to use Font Awesome solid style for consistency */
+.header-navigation .nav-menu .main-menu ul li .dd-trigger i {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+/* Optional: Adjust the icon appearance */
+.header-navigation .nav-menu .main-menu ul li .dd-trigger i {
+    font-size: 16px;
+    line-height: 45px;
 }
