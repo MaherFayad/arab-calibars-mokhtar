@@ -4733,3 +4733,22 @@ color  transition: all 0.3s ease-out 0s;
         padding-right: 16px;
     }
 }
+
+/* Add rotation animation for the dropdown arrow */
+.header-navigation .main-menu ul > li.has-children > a:after {
+    transition: transform 0.3s ease;
+}
+
+.header-navigation .main-menu ul > li.has-children:hover > a:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Ensure the arrow stays white in the transparent header */
+.navigation-white .main-menu ul > li.has-children > a:after {
+    color: #fff;
+}
+
+/* Keep the arrow visible when sticky */
+.sticky .main-menu ul > li.has-children > a:after {
+    color: #0A1426;
+}
