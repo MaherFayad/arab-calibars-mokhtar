@@ -1726,6 +1726,7 @@ h3.title {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 40px;
+  background-color: #5355A4;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .block-style-two .icon {
@@ -1741,23 +1742,27 @@ h3.title {
   font-size: 35px;
 }
 .block-style-two .icon.bg-one {
-  background-color: #EEEEF6;
-  color: #5355A4;
+  background-color: #5355A4;
+  color: #fff;
 }
-.block-style-two .icon.bg-two {
-  background-color: #EEEEF6;
-  color: #5355A4;
 
+.block-style-two .icon.bg-two {
+  background-color: #5355A4;
+  color: #fff;
 }
+
 .block-style-two .icon.bg-three {
-  background-color: #EEEEF6;
-  color: #5355A4;
+  background-color: #5355A4;
+  color: #fff;
 
 }
 .block-style-two .icon.bg-four {
-  background-color: #EEEEF6;
-  color: #5355A4;
+  background-color: #5355A4;
+  color: #fff;
 
+}
+.block-style-two:hover .icon {
+  background-color: #9CCC54;
 }
 .block-style-two .text {
   margin-top: -7px;
@@ -4744,14 +4749,14 @@ color  transition: all 0.3s ease-out 0s;
 }
 
 /* Ensure the arrow stays white in the transparent header */
-.navigation-white .main-menu ul > li.has-children > a:after {
+.navigation-white .main-menu ul > li.has-children > a:after {block-style-two
     color: #fff;
 }
 
 /* Keep the arrow visible when sticky */
-.sticky .main-menu ul > li.has-children > a:after {
+/* .sticky .main-menu ul > li.has-children > a:after {
     color: #0A1426;
-}
+} */
 
 /* Rotate dropdown trigger arrow in mobile view */
 .header-navigation .nav-menu .main-menu ul li .dd-trigger {
@@ -4912,4 +4917,25 @@ color  transition: all 0.3s ease-out 0s;
     .top-bar {
         display: none;
     }
+}
+
+.footer-area .footer-widget .widget.footer-nav-widget ul.footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-area .footer-widget .widget.footer-nav-widget ul.footer-nav li {
+    margin-bottom: 15px;
+}
+
+.footer-area .footer-widget .widget.footer-nav-widget ul.footer-nav li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-area .footer-widget .widget.footer-nav-widget ul.footer-nav li a {
+    display: inline-block;
+    line-height: 1.4;
+    position: relative;
+    transition: color 0.3s ease;
 }
