@@ -4864,3 +4864,52 @@ color  transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 2;
 }
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #0A1426; /* Dark background */
+    padding: 5px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left span {
+    margin-right: 20px;
+    color: #fff; /* White text */
+}
+
+.top-left span i {
+    margin-right: 5px;
+    color: #9CCC54; /* Using your brand accent color */
+}
+
+.top-right .social-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.top-right .social-link li a {
+    color: #fff; /* White text */
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.top-right .social-link li a:hover {
+    color: #9CCC54; /* Accent color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+}
