@@ -795,7 +795,7 @@ button {
   z-index: 99;
   height: auto;
   text-align: left;
-  min-width: 220px; /* Increased width for longer industry names */
+  min-width: 300px; /* Increased width for longer industry names */
 }
 .header-navigation .main-menu ul > li .sub-menu li {
   display: block;
