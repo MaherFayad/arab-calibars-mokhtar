@@ -3292,7 +3292,7 @@ color  transition: all 0.3s ease-out 0s;
 }
 .testimonial-style-one .testimonial-item .author-thumb-title .author-thumb img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 0%;
   align-items: center;
   justify-items: center;
   align-content: center;
