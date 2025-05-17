@@ -225,40 +225,40 @@
                                 <h4 class="widget-title">Get In touch</h4>
                                 <div class="contact-form">
     
-                                    <script type="text/javascript"
-                                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-                                    <script type="text/javascript">
-                                        // Initialize Email.js
-                                        (function () {
-                                            emailjs.init('o4Pu1RMl2q1Ft2Wr0'); // Replace with your actual public key
-                                        })();
-    
-                                        // Function to handle form submission
-                                        function sendEmail(event) {
-                                            event.preventDefault(); // Prevent default form submission
-    
-                                            const form = document.getElementById('contact-form');
-                                            const data = {
-                                                name: form.name.value,       // Matches {{name}}
-                                                customeremail: form.customeremail.value, // Matches {{customeremail}} in template
-                                                subject: form.subject.value, // Matches {{subject}}
-                                                message: form.message.value  // Matches {{message}} in template
-                                            };
-    
-                                            emailjs
-                                                .send('service_iev6o4e', 'template_ywsihz9', data)
-                                                .then(
-                                                    function (response) {
-                                                        alert('Message sent successfully!');
-                                                        form.reset(); // Clear the form after successful submission
-                                                    },
-                                                    function (error) {
-                                                        alert('Failed to send message. Please try again later.');
-                                                    }
-                                                );
-                                        }
-    
-                                    </script>
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                    <script type="text/javascript">
+                        // Initialize Email.js
+                        (function () {
+                            emailjs.init('w_6w151ldK7_gOqRt'); // Replace with your actual public key
+                        })();
+
+                        // Function to handle form submission
+                        function sendEmail(event) {
+                            event.preventDefault(); // Prevent default form submission
+
+                            const form = document.getElementById('contact-form');
+                            const data = {
+                                name: form.name.value,       // Matches {{name}}
+                                customeremail: form.customeremail.value, // Matches {{customeremail}} in template
+                                subject: form.subject.value, // Matches {{subject}}
+                                message: form.message.value  // Matches {{message}} in template
+                            };
+
+                            emailjs
+                                .send('service_938ov3b', 'template_9qszuef', data)
+                                .then(
+                                    function (response) {
+                                        alert('Message sent successfully!');
+                                        form.reset(); // Clear the form after successful submission
+                                    },
+                                    function (error) {
+                                        alert('Failed to send message. Please try again later.');
+                                    }
+                                );
+                        }
+
+                    </script>
     
                                     <form id="contact-form" onsubmit="sendEmail(event)">
                                         <div class="row">
